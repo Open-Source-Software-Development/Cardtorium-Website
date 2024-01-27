@@ -1,29 +1,37 @@
-// /*!
+/*!
 
-// =========================================================
-// * Paper Kit React - v1.3.2
-// =========================================================
+=========================================================
+* Paper Kit React - v1.3.2
+=========================================================
 
-// * Product Page: https://www.creative-tim.com/product/paper-kit-react
+* Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-// * Copyright 2023 Creative Tim (https://www.creative-tim.com)
-// * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
-// * Coded by Creative Tim
+* Coded by Creative Tim
 
-// =========================================================
+=========================================================
 
-// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
 
 import React from "react";
 import classnames from "classnames";
-import { Collapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container } from "reactstrap";
-import { useLocation } from 'react-router-dom';
+import {
+  Collapse,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  Nav,
+  Container,
+} from "reactstrap";
+import { Link } from "react-scroll";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
-  const location = useLocation();
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -31,18 +39,32 @@ function IndexNavbar() {
   };
 
   React.useEffect(() => {
-    setNavbarColor(location.pathname === "/index" ? "navbar-transparent" : "navbar-light bg-info");
-  }, [location.pathname]);
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 299 ||
+        document.body.scrollTop > 299
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 300 ||
+        document.body.scrollTop < 300
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", updateNavbarColor);
+
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  }, []);
 
   return (
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            href="/index"
-            title="Logo"
-          >
+          <NavbarBrand data-placement="bottom" href="/" title="Logo">
             LOGO
           </NavbarBrand>
           <button
@@ -64,16 +86,52 @@ function IndexNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="https://cardtorium.surge.sh/#/documentation">Documentation</NavLink>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                About
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://cardtorium.surge.sh/#/about">About</NavLink>
+              <Link
+                to="documentation"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                Documentation
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://cardtorium.surge.sh/#/blog">Blog</NavLink>
+              <Link
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                Blog
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://cardtorium.surge.sh/#/community">Community</NavLink>
+              <Link
+                to="community"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                Community
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>

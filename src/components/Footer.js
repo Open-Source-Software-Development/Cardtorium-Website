@@ -16,55 +16,36 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-/*eslint-disable*/
+
 import React from "react";
+import { Container, Row, Col } from "reactstrap";
 
-// reactstrap components
-import { Row, Container } from "reactstrap";
-
-function DemoFooter() {
+function Footer() {
   return (
-    <footer className="footer footer-black footer-white">
+    <footer className="footer" style={{ borderTop: "1px solid #ccc", background: "#f8f9fa" }}>
       <Container>
         <Row>
-          {/* <nav className="footer-nav">
-            <ul>
-              <li>
+          <Col md="12">
+            <div className="credits text-center">
+              <h4>Footer Info</h4>
+              <p>
+                Licensing?              </p>
+
+              <p>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
+                  href="https://github.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Creative Tim
+                  GitHub
                 </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Licenses
-                </a>
-              </li>
-            </ul>
-          </nav> */}
-          {/* <div className="credits ml-auto">
-            <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
-            </span>
-          </div> */}
+              </p>
+            </div>
+          </Col>
         </Row>
       </Container>
     </footer>
   );
 }
 
-export default DemoFooter;
+export default Footer;

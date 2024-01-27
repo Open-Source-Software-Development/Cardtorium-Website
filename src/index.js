@@ -20,15 +20,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter, Route, Navigate, Routes } from "react-router-dom";
 
-// styles
 import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
-// pages
+
 import Index from "views/Index.js";
-import About from "views/About/About.js"
-import Documentation from "views/Documentation/Documentation.js"
-import Blog from "views/Blog/Blog.js"
-import Community from "views/Community/Community.js"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -36,10 +31,6 @@ root.render(
   <HashRouter>
     <Routes>
       <Route path="/index" element={<Index />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/documentation" element={<Documentation />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/community" element={<Community />} />
       <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
   </HashRouter>

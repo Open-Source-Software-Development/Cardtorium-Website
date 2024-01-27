@@ -16,20 +16,16 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
 import React from "react";
+import IndexNavbar from "components/IndexNavbar";
+import IndexHeader from "components/IndexHeader";
+import Footer from "components/Footer";
+import SectionAbout from "../About";
+import SectionBlog from "../Blog";
+import SectionCommunity from "../Community";
+import SectionDocumentation from "../Documentation";
 
-// reactstrap components
-
-// core components
-import IndexNavbar from "components/IndexNavbar.js";
-import IndexHeader from "components/IndexHeader.js";
-import Footer from "components/Footer.js";
-
-// index sections
-import About from "views/About/About.js";
-import Documentation from "./Documentation/Documentation";
-import Blog from "./Blog/Blog";
-import Community from "./Community/Community";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -41,11 +37,15 @@ function Index() {
   });
   return (
     <>
+      <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <IndexNavbar />
-        {/* <DemoFooter /> */}
+        <SectionAbout />
+        <SectionDocumentation />
+        <SectionBlog />
+        <SectionCommunity />
       </div>
+      <Footer />
     </>
   );
 }
