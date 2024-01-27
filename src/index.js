@@ -25,10 +25,10 @@ import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
 // pages
 import Index from "views/Index.js";
-import About from "views/index-sections/SectionAbout.js"
-import Documentation from "views/index-sections/SectionDocumentation.js"
-import Blog from "views/index-sections/SectionBlog.js"
-import Community from "views/index-sections/SectionCommunity.js"
+import About from "views/About/About.js"
+import Documentation from "views/Documentation/Documentation.js"
+import Blog from "views/Blog/Blog.js"
+import Community from "views/Community/Community.js"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

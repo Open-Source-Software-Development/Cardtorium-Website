@@ -26,10 +26,10 @@ import IndexHeader from "components/IndexHeader.js";
 import Footer from "components/Footer.js";
 
 // index sections
-import SectionAbout from "views/index-sections/SectionAbout.js";
-import SectionDocumentation from "./index-sections/SectionDocumentation";
-import SectionBlog from "./index-sections/SectionBlog";
-import SectionCommunity from "./index-sections/SectionCommunity";
+import About from "views/About/About.js";
+import Documentation from "./Documentation/Documentation";
+import Blog from "./Blog/Blog";
+import Community from "./Community/Community";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");

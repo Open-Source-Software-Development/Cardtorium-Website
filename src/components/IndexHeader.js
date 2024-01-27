@@ -61,6 +61,12 @@ function IndexHeader() {
               href="placeholder.zip" // placeholder download
               className="btn-round mr-1" color="neutral" outline download>Download</Button>
           </div>
+          <div
+            className="moving-clouds"
+            style={{
+              backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
+            }}
+          />
         </Container>
       </div>
     </>

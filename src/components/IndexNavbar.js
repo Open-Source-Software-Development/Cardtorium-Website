@@ -64,16 +64,16 @@ function IndexNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="/documentation">Documentation</NavLink>
+              <NavLink href="https://cardtorium.surge.sh/#/documentation">Documentation</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink href="https://cardtorium.surge.sh/#/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog">Blog</NavLink>
+              <NavLink href="https://cardtorium.surge.sh/#/blog">Blog</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/community">Community</NavLink>
+              <NavLink href="https://cardtorium.surge.sh/#/community">Community</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
