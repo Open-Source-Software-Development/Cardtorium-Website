@@ -18,7 +18,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
+import { HashRouter, Route, Navigate, Routes } from "react-router-dom";
 
 // styles
 import "bootstrap/scss/bootstrap.scss";
@@ -33,14 +33,14 @@ import Community from "views/index-sections/SectionCommunity.js"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
-      <Route path="/index" element={<Index />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/documentation" element={<Documentation />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/community" element={<Community />} />
-      <Route path="*" element={<Navigate to="/index" replace />} />
+      <Route path="/#/index" element={<Index />} />
+      <Route path="/#/about" element={<About />} />
+      <Route path="/#/documentation" element={<Documentation />} />
+      <Route path="/#/blog" element={<Blog />} />
+      <Route path="/#/community" element={<Community />} />
+      <Route path="*" element={<Navigate to="/#/index" replace />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );

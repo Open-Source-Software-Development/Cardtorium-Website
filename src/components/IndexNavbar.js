@@ -64,16 +64,16 @@ function IndexNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="/documentation">Documentation</NavLink>
+              <NavLink href="/#/documentation">Documentation</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink href="/#/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog">Blog</NavLink>
+              <NavLink href="/#/blog">Blog</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/community">Community</NavLink>
+              <NavLink href="/#/community">Community</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
