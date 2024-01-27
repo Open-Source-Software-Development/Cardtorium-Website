@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.728d5959.css",
-    "main.js": "./static/js/main.b22384f6.js",
-    "static/media/background.png": "./static/media/background.11a82c1d7f85b27e77b8.png",
-    "static/media/placeholder2.jpg": "./static/media/placeholder2.a16f281cc99a02795dd7.jpg",
-    "static/media/placeholder1.jpg": "./static/media/placeholder1.620dc9e92af6bac885fe.jpg",
-    "static/media/nucleo-icons.eot": "./static/media/nucleo-icons.bd42d77b9672555647d1.eot",
-    "static/media/nucleo-icons.ttf": "./static/media/nucleo-icons.4466aeec3386b965a232.ttf",
-    "static/media/nucleo-icons.woff": "./static/media/nucleo-icons.8e954b749f951b654fc6.woff",
-    "static/media/nucleo-icons.woff2": "./static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
-    "index.html": "./index.html"
+    "main.css": "/Cardtorium-Website/static/css/main.778cc696.css",
+    "main.js": "/Cardtorium-Website/static/js/main.7e22b22a.js",
+    "static/media/background.png": "/Cardtorium-Website/static/media/background.11a82c1d7f85b27e77b8.png",
+    "static/media/placeholder2.jpg": "/Cardtorium-Website/static/media/placeholder2.a16f281cc99a02795dd7.jpg",
+    "static/media/placeholder1.jpg": "/Cardtorium-Website/static/media/placeholder1.620dc9e92af6bac885fe.jpg",
+    "static/media/nucleo-icons.eot": "/Cardtorium-Website/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
+    "static/media/nucleo-icons.ttf": "/Cardtorium-Website/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
+    "static/media/nucleo-icons.woff": "/Cardtorium-Website/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
+    "static/media/nucleo-icons.woff2": "/Cardtorium-Website/static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
+    "index.html": "/Cardtorium-Website/index.html"
   },
   "entrypoints": [
-    "static/css/main.728d5959.css",
-    "static/js/main.b22384f6.js"
+    "static/css/main.778cc696.css",
+    "static/js/main.7e22b22a.js"
   ]
 }
