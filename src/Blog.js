@@ -65,7 +65,7 @@ function SectionBlog() {
     return (
         <>
             <IndexNavbar />
-            <div className="section pt-5 pb-5" id="blog" style={{ height: "100vh", borderBottom: "1px solid #ccc" }}>
+            <div className="section pt-5 pb-5" id="blog" style={{ borderBottom: "1px solid #ccc" }}>
                 <div className="container">
                     <h2 className="text-center mb-5">Latest Blog Posts</h2>
                     <div className="row">
@@ -85,5 +85,6 @@ function SectionBlog() {
         </>
     );
 }
+
 
 export default SectionBlog;

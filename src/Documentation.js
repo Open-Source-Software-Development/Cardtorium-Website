@@ -25,14 +25,13 @@ function SectionDocumentation() {
     return (
         <>
             <IndexNavbar />
-            <div className="section pt-5 pb-5" id="documentation" style={{ height: "100vh", borderBottom: "1px solid #ccc" }}>
+            <div className="section pt-5 pb-5" id="documentation" style={{ borderBottom: "1px solid #ccc" }}>
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="8">
                             <h1 className="text-center mb-4">Cardtorium Documentation</h1>
                             <p className="text-center" style={{ lineHeight: "1.6" }}>
-                                Welcome to the documentation for Cardtorium. Below, you'll find
-                                instructions on how to download and get started.
+                                Welcome to the documentation for Cardtorium. Below, you'll find instructions on how to download and get started.
                             </p>
 
                             <div className="documentation-section" style={{ lineHeight: "1.6" }}>
@@ -76,12 +75,7 @@ function SectionDocumentation() {
                             </div>
 
                             <div className="text-center mt-4">
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-primary"
-                                >
+                                <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                                     View Full Documentation
                                 </a>
                             </div>

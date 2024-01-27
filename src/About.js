@@ -93,7 +93,7 @@ function SectionAbout() {
             </div> */}
 
             {/* About Section */}
-            <div className="section pt-5 pb-5" id="about" style={{ height: "100vh", borderBottom: "1px solid #ccc" }}>
+            <div className="section pt-5 pb-5" id="about" style={{ borderBottom: "1px solid #ccc" }}>
                 <Container fluid>
                     <Row className="justify-content-center">
                         <Col md="8">
