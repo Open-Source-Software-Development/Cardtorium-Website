@@ -35,12 +35,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <Routes>
-      <Route path="/#/index" element={<Index />} />
-      <Route path="/#/about" element={<About />} />
-      <Route path="/#/documentation" element={<Documentation />} />
-      <Route path="/#/blog" element={<Blog />} />
-      <Route path="/#/community" element={<Community />} />
-      <Route path="*" element={<Navigate to="/#/index" replace />} />
+      <Route path="/index" element={<Index />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/documentation" element={<Documentation />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/community" element={<Community />} />
+      <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
   </HashRouter>
 );
