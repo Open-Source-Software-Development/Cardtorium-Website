@@ -66,26 +66,25 @@ function SectionBlog() {
         <>
             <IndexNavbar />
             <div className="section pt-5 pb-5" id="blog" style={{ borderBottom: "1px solid #ccc" }}>
-                <div className="section pt-5 pb-5" id="blog" style={{ borderBottom: "1px solid #ccc" }}>
-                    <div className="container">
-                        <h2 className="text-center mb-5">Latest Blog Posts</h2>
-                        <div className="row">
-                            {blogData.map((post) => (
-                                <div key={post.id} className="col-md-4 mb-4">
-                                    <BlogPost
-                                        image={post.image}
-                                        title={post.title}
-                                        date={post.date}
-                                        description={post.description}
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                <div className="container">
+                    <h2 className="text-center mb-5">Latest Blog Posts</h2>
+                    <div className="row">
+                        {blogData.map((post) => (
+                            <div key={post.id} className="col-md-4 mb-4">
+                                <BlogPost
+                                    image={post.image}
+                                    title={post.title}
+                                    date={post.date}
+                                    description={post.description}
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
-            </>
-            );
+            </div>
+        </>
+    );
 }
 
 
-            export default SectionBlog;
+export default SectionBlog;
