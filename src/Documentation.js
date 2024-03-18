@@ -40,23 +40,23 @@ function SectionDocumentation() {
                                     To download Cardtorium, follow these simple steps:
                                 </p>
 
-                                <pre>
+                                {/* <pre>
                                     <code>pip or whatever install Cardtorium</code>
-                                </pre>
+                                </pre> */}
 
-                                <p>
+                                {/* <p>
                                     Once installed, you can launch the game using the following
                                     command:
-                                </p>
+                                </p> */}
 
-                                <pre>
+                                {/* <pre>
                                     <code>Cardtorium start</code>
-                                </pre>
+                                </pre> */}
 
-                                <p>
+                                {/* <p>
                                     Congratulations! You've successfully downloaded and launched
                                     Cardtorium.
-                                </p>
+                                </p> */}
                             </div>
 
                             <div className="documentation-section" style={{ lineHeight: "1.6" }}>
@@ -66,12 +66,12 @@ function SectionDocumentation() {
                                     following requirements:
                                 </p>
 
-                                <ul>
+                                {/* <ul>
                                     <li>Operating System: Windows, macOS, Linux</li>
                                     <li>RAM: 4GB or higher</li>
                                     <li>Free Disk Space: 10GB</li>
                                     <li>Graphics: DirectX 11 compatible</li>
-                                </ul>
+                                </ul> */}
                             </div>
 
                             <div className="text-center mt-4">

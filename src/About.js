@@ -32,32 +32,18 @@ import {
 
 const items = [
     {
-        src: require("assets/img/placeholder1.jpg"),
-        altText: "Somewhere",
-        caption: "Somewhere",
+        src: require("assets/img/sprites.jpg"),
     },
     {
-        src: require("assets/img/placeholder2.jpg"),
-        altText: "Somewhere else",
-        caption: "Somewhere else",
+        src: require("assets/img/menu.jpg"),
     },
     {
-        src: require("assets/img/placeholder2.jpg"),
-        altText: "Here it is",
-        caption: "Here it is",
+        src: require("assets/img/movement.jpg"),
     },
 ];
 
 const fakeWords = `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-  Integer tincidunt quam eu bibendum interdum. 
-  Fusce vehicula congue neque vel vulputate. 
-  Suspendisse potenti. Donec vel justo eu erat rhoncus malesuada. 
-  Curabitur ultrices dolor at nulla bibendum, in ultricies turpis pharetra. 
-  Sed tincidunt nunc in nulla hendrerit, ac ullamcorper ligula facilisis. 
-  Aenean sed risus eu elit aliquet varius. Maecenas in elit at dui interdum 
-  viverra sit amet id dolor. Proin vel ex ac lectus efficitur ultricies. 
-  Phasellus consequat quam eu orci scelerisque, eu scelerisque justo sodales.
+ Cardtorium is a civilization-style 2D card game. Players can build cities, gather resources, and engage in combat with an opponent.
 `;
 
 function SectionAbout() {
@@ -97,7 +83,7 @@ function SectionAbout() {
                 <Container fluid>
                     <Row className="justify-content-center">
                         <Col md="8">
-                            <h2 className="text-center mb-4">About/Exciting Heading</h2>
+                            <h2 className="text-center mb-4">About</h2>
                             <Row>
                                 <Col md="6">
                                     <Card className="page-carousel">

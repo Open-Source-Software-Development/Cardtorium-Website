@@ -64,8 +64,8 @@ function IndexNavbar() {
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand data-placement="bottom" href="/" title="Logo">
-            LOGO
+          <NavbarBrand data-placement="bottom" href="/">
+            <img src={require("../assets/img/logo.jpg")} style={{ height: "50px" }} />
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
