@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Cardtorium-Website/static/css/main.778cc696.css",
-    "main.js": "/Cardtorium-Website/static/js/main.d9d6708e.js",
+    "main.js": "/Cardtorium-Website/static/js/main.dac7a95f.js",
     "static/media/background.png": "/Cardtorium-Website/static/media/background.11a82c1d7f85b27e77b8.png",
     "static/media/clouds.png": "/Cardtorium-Website/static/media/clouds.3c700c1313cc1cd3d3c5.png",
     "static/media/sprites.jpg": "/Cardtorium-Website/static/media/sprites.42725d29a04f38b99411.jpg",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.778cc696.css",
-    "static/js/main.d9d6708e.js"
+    "static/js/main.dac7a95f.js"
   ]
 }
