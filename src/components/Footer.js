@@ -27,13 +27,13 @@ function Footer() {
         <Row>
           <Col md="12">
             <div className="credits text-center">
-              <h4>Footer Info</h4>
+              <h4></h4>
               <p>
-                Licensing?              </p>
+                GPL</p>
 
               <p>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Open-Source-Software-Development/Cardtorium"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

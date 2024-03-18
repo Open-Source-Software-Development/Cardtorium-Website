@@ -65,7 +65,7 @@ function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand data-placement="bottom" href="/" title="Logo">
-            LOGO
+            <img src={require("../assets/img/cardtorium_logo.png")} alt="Logo" style={{ height: "50px" }} />
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

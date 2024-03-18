@@ -32,19 +32,19 @@ import {
 
 const items = [
     {
-        src: require("assets/img/placeholder1.jpg"),
-        altText: "Somewhere",
-        caption: "Somewhere",
+        src: require("assets/img/movement.jpg"),
+        // altText: "Movement and Interaction",
+        // caption: "Somewhere",
     },
     {
-        src: require("assets/img/placeholder2.jpg"),
-        altText: "Somewhere else",
-        caption: "Somewhere else",
+        src: require("assets/img/menu.jpg"),
+        // altText: "Somewhere else",
+        // caption: "Somewhere else",
     },
     {
-        src: require("assets/img/placeholder2.jpg"),
-        altText: "Here it is",
-        caption: "Here it is",
+        src: require("assets/img/sprites.jpg"),
+        // altText: "Here it is",
+        // caption: "Here it is",
     },
 ];
 
@@ -97,7 +97,7 @@ function SectionAbout() {
                 <Container fluid>
                     <Row className="justify-content-center">
                         <Col md="8">
-                            <h2 className="text-center mb-4">About/Exciting Heading</h2>
+                            <h2 className="text-center mb-4">Current WIP</h2>
                             <Row>
                                 <Col md="6">
                                     <Card className="page-carousel">

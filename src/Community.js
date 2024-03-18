@@ -36,7 +36,7 @@ function SectionCommunity() {
                             </p>
                             <div className="text-center">
                                 <a
-                                    href="DISCORD_INVITE_LINK"
+                                    href="https://discord.gg/qyWXeWan"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-primary"
