@@ -53,7 +53,7 @@ function IndexHeader() {
         <Container>
           <div className="motto text-center">
             <h1>Cardtorium</h1>
-            <h3>Description Here</h3>
+            <h3>Civilization-style turn-based 2D strategy game</h3>
             <br />
             <Button href="https://drive.google.com/file/d/1tfrHWAtYyEiIPIebnsek9yGK2FxtreUV/view?usp=drive_link" className="btn-round mr-1" color="neutral" target="_blank" outline >
               <i className="fa fa-play" />Watch Demo</Button>
