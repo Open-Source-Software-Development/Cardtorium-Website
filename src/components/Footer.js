@@ -29,7 +29,7 @@ function Footer() {
             <div className="credits text-center">
               <h4></h4>
               <p>
-                GPL</p>
+                GPL 3.0</p>
 
               <p>
                 <a

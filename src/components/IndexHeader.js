@@ -18,8 +18,8 @@
 */
 /*eslint-disable*/
 import React from "react";
-
-import { Button, Container } from "reactstrap";
+import { Link } from "react-scroll";
+import { Button, Container, NavItem } from "reactstrap";
 
 function IndexHeader() {
 
@@ -57,9 +57,36 @@ function IndexHeader() {
             <br />
             <Button href="https://drive.google.com/file/d/1tfrHWAtYyEiIPIebnsek9yGK2FxtreUV/view?usp=drive_link" className="btn-round mr-1" color="neutral" target="_blank" outline >
               <i className="fa fa-play" />Watch Demo</Button>
-            <Button
-              href="placeholder.zip" // placeholder download
-              className="btn-round mr-1" color="neutral" outline download>Download</Button>
+            <Button className="btn-round mr-1" color="neutral" outline>
+              <Link
+                to="documentation"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+                style={{ fontWeight: 'bold' }} // adjust the value as needed
+              >
+                Download
+              </Link>
+            </Button>
+            {/* <Button href="placeholder.zip" // placeholder download
+              className="btn-round mr-1" color="neutral" outline download>Download</Button> */}
+            {/* <Button>
+              <Link
+                to="documentation"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                // className="nav-link"
+                className="btn-round mr-1"
+                color="neutral"
+                outline
+              >
+                Documentation
+              </Link>
+            </Button> */}
+
           </div>
           <div
             className="moving-clouds"

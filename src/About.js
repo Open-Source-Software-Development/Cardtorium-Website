@@ -40,6 +40,9 @@ const items = [
     {
         src: require("assets/img/movement.jpg"),
     },
+    {
+        src: require("assets/img/fog-clear.png"),
+    },
 ];
 
 const fakeWords = `
@@ -103,7 +106,7 @@ function SectionAbout() {
                                                     onExited={onExited}
                                                     key={item.src}
                                                 >
-                                                    <img src={item.src} alt={item.altText} />
+                                                    <img src={item.src} alt={item.altText} style={{ width: "100%", height: "300px", objectFit: "cover" }} />
                                                     <CarouselCaption
                                                         captionText={item.caption}
                                                         captionHeader=""

@@ -23,6 +23,7 @@ import IndexNavbar from "components/IndexNavbar";
 import movement from "../src/assets/img/movement.jpg"
 import menu from "../src/assets/img/menu.jpg"
 import sprites from "../src/assets/img/sprites.jpg"
+import fogclear from "../src/assets/img/fog-clear.png"
 
 const BlogPost = ({ image, title, date, description }) => {
     return (
@@ -58,6 +59,13 @@ const blogData = [
         title: "Movement and Interactions",
         date: "March 18, 2024",
         description: "In our most recent milestone 3, we implemented troop movement and the ability to place cards on the board from the player's hand. Additionally, we added fog of war to the game board, which hides the opponent's cards until they are within range of the player's units. We also added a variety of new troops to the game, including factions. We're currently working on implementing the game's turn and combat system.",
+    },
+    {
+        id: 4,
+        image: fogclear,
+        title: "Fog Clearing",
+        date: "March 25, 2024",
+        description: "We added the ability to automatically clear fog of war from the game board. We also updated the UI for card selection from the player's hand. We're currently working on player turns and adding functionality to the stats bar at the top of the game.",
     },
 ];
 
