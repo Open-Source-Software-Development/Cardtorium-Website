@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Cardtorium-Website/static/css/main.778cc696.css",
-    "main.js": "/Cardtorium-Website/static/js/main.dac7a95f.js",
-    "static/media/background.png": "/Cardtorium-Website/static/media/background.11a82c1d7f85b27e77b8.png",
+    "main.js": "/Cardtorium-Website/static/js/main.5d1b4ad1.js",
     "static/media/clouds.png": "/Cardtorium-Website/static/media/clouds.3c700c1313cc1cd3d3c5.png",
     "static/media/sprites.jpg": "/Cardtorium-Website/static/media/sprites.42725d29a04f38b99411.jpg",
+    "static/media/background.png": "/Cardtorium-Website/static/media/background.cb27d21eeb4b334aa090.png",
     "static/media/movement.jpg": "/Cardtorium-Website/static/media/movement.861333ab5e8f20288393.jpg",
+    "static/media/fog-clear.png": "/Cardtorium-Website/static/media/fog-clear.556daa2bd6c5e906f1f9.png",
     "static/media/menu.jpg": "/Cardtorium-Website/static/media/menu.d4942e6b1138e370eeba.jpg",
     "static/media/nucleo-icons.eot": "/Cardtorium-Website/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
     "static/media/nucleo-icons.ttf": "/Cardtorium-Website/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
@@ -16,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.778cc696.css",
-    "static/js/main.dac7a95f.js"
+    "static/js/main.5d1b4ad1.js"
   ]
 }
