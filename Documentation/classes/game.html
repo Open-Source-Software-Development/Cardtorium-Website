@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Game &#8212; Cardtorium 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="OptionsMenu" href="optionsmenu.html" />
+    <link rel="prev" title="Board" href="board.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="game">
+<span id="class-game"></span><h1>Game<a class="headerlink" href="#game" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></p>
+<p>Class which contains the logic and data required to run a game. Does not contain any rendering functions or input processing.</p>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a></p></td>
+<td><p><a class="reference internal" href="#class-game-property-board"><span class="std std-ref">board</span></a></p></td>
+<td><p>&lt;unknown&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></p></td>
+<td><p><a class="reference internal" href="#class-game-property-num-players"><span class="std std-ref">num_players</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-private-method-ready"><span class="std std-ref">_ready</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-end-turn"><span class="std std-ref">end_turn</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-place-card"><span class="std std-ref">place_card</span></a>(card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a>, x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-place-from-hand"><span class="std std-ref">place_from_hand</span></a>(index: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-remove-unit"><span class="std std-ref">remove_unit</span></a>(unit: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-set-terrain"><span class="std std-ref">set_terrain</span></a>(terrain: <a class="reference internal" href="board.html#enum-board-terrain"><span class="std std-ref">Terrain</span></a>, location: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>])</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-game-method-troop-move"><span class="std std-ref">troop_move</span></a>(troop: <a class="reference internal" href="troop.html#class-troop"><span class="std std-ref">Troop</span></a>, tile: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p class="classref-signal">(changed: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>], terrain: <a class="reference internal" href="board.html#enum-board-terrain"><span class="std std-ref">Terrain</span></a>)</p>
+<p>Notifies other nodes when a set of terrain tiles is changed.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-signal">(troop: <a class="reference internal" href="troop.html#class-troop"><span class="std std-ref">Troop</span></a>, path: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>)</p>
+<p>Emitted when a troop is moved</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-signal">(troop: <a class="reference internal" href="troop.html#class-troop"><span class="std std-ref">Troop</span></a>, pos: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>)</p>
+<p>Emitted when a troop is placed.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-signal">(local_id: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p>
+<p>Emitted when a player ends their turn.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-signal" id="class-game-signal-unit-removed">(unit: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>)</p>
+<p>Emitted when a unit is removed from the board.</p>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property" id="class-game-property-board"><a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a> <strong>board</strong> = &lt;unknown&gt;</p>
+<p>Contains the game’s data. Saving the board to disk allows saving and loading games.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> <strong>num_players</strong></p>
+<p>Number of players</p>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method" id="class-game-private-method-ready"><abbr title="No return value.">void</abbr> <strong>_ready</strong>()</p>
+<div class="contribute docutils container">
+<p>There is currently no description for this method.</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="class-game-method-end-turn"><abbr title="No return value.">void</abbr> <strong>end_turn</strong>()</p>
+<p>Goes to the next player’s turn</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><abbr title="No return value.">void</abbr> <strong>place_card</strong>(card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a>, x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p>
+<p>Takes a card as input, and places that card at position x, y.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><abbr title="No return value.">void</abbr> <strong>place_from_hand</strong>(index: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p>
+<p>Places the nth card in the player’s hand onto the board at position x, y</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="class-game-method-remove-unit"><abbr title="No return value.">void</abbr> <strong>remove_unit</strong>(unit: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>)</p>
+<p>Removes a unit from the board</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><abbr title="No return value.">void</abbr> <strong>set_terrain</strong>(terrain: <a class="reference internal" href="board.html#enum-board-terrain"><span class="std std-ref">Terrain</span></a>, location: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>])</p>
+<p>Changes the terrain for an array of tiles</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><abbr title="No return value.">void</abbr> <strong>troop_move</strong>(troop: <a class="reference internal" href="troop.html#class-troop"><span class="std std-ref">Troop</span></a>, tile: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>)</p>
+<p>Moves a troop from one position to another. WARNING: If the move is invalid, then this function will throw an error.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="attribute.html">Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="card.html">Card</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mainmenu.html">MainMenu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">Player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troopattribute.html">TroopAttribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board.html">Board</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optionsmenu.html">OptionsMenu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troop.html">Troop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit.html">Unit</a></li>
+</ul>
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Game</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#property-descriptions">Property Descriptions</a></li>
+<li><a class="reference internal" href="#method-descriptions">Method Descriptions</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, None.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/classes/game.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

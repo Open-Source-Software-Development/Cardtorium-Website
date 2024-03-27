@@ -1,0 +1,278 @@
+.. _class_Troop:
+
+Troop
+=====
+
+**Inherits:** :ref:`Unit<class_Unit>` **<** `Node <https://docs.godotengine.org/en/stable/classes/class_node.html>`_
+
+Class which represents a troop on the board.
+
+.. rst-class:: classref-reftable-group
+
+Properties
+----------
+
+.. table::
+   :widths: auto
+
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `Array <https://docs.godotengine.org/en/stable/classes/class_array.html>`_\[:ref:`TroopAttribute<class_TroopAttribute>`\] | :ref:`attributes<class_Troop_property_attributes>` | <unknown> |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_                                                    | :ref:`defense<class_Troop_property_defense>`       |           |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `bool <https://docs.godotengine.org/en/stable/classes/class_bool.html>`_                                                  | :ref:`has_atkd<class_Troop_property_has_atkd>`     | false     |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `bool <https://docs.godotengine.org/en/stable/classes/class_bool.html>`_                                                  | :ref:`has_moved<class_Troop_property_has_moved>`   | false     |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_                                                    | :ref:`id<class_Troop_property_id>`                 | 0         |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `Variant <https://docs.godotengine.org/en/stable/classes/class_variant.html>`_                                            | :ref:`move_graph<class_Troop_property_move_graph>` | null      |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+   | `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_                                                    | :ref:`movement<class_Troop_property_movement>`     |           |
+   +---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+-----------+
+
+.. rst-class:: classref-reftable-group
+
+Constructors
+------------
+
+.. table::
+   :widths: auto
+
+   +--------+---------------------------------------------------------------------------------------------------------------------------+
+   | |void| | :ref:`_init<class_Troop_constructor__init>`\ (\ _game\: :ref:`Game<class_Game>`, card\: :ref:`Card<class_Card>` = null\ ) |
+   +--------+---------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-reftable-group
+
+Methods
+-------
+
+.. table::
+   :widths: auto
+
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_                                                                                     | :ref:`_calc_move_cost<class_Troop_private_method__calc_move_cost>`\ (\ strength\: `float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_, from\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, to\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, board\: :ref:`Board<class_Board>`\ ) |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `Array <https://docs.godotengine.org/en/stable/classes/class_array.html>`_\[`Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_\] | :ref:`_get_surrounding<class_Troop_private_method__get_surrounding>`\ (\ center\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, radius\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_\ )                                                                                                                             |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                                                                                                         | :ref:`_init<class_Troop_private_method__init>`\ (\ _game\: :ref:`Game<class_Game>`, card\: :ref:`Card<class_Card>` = null\ )                                                                                                                                                                                                                                                       |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                                                                                                         | :ref:`attack_unit<class_Troop_method_attack_unit>`\ (\ defender\: :ref:`Unit<class_Unit>`\ )                                                                                                                                                                                                                                                                                       |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_                                                                                         | :ref:`being_attacked<class_Troop_method_being_attacked>`\ (\ attacker\: :ref:`Unit<class_Unit>`, atk\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, attack_force\: `float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_\ )                                                                                                        |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |void|                                                                                                                                                         | :ref:`build_graph<class_Troop_method_build_graph>`\ (\ x\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, y\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, board\: :ref:`Board<class_Board>`\ )                                                                                                                                |
+   +----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Property Descriptions
+---------------------
+
+.. _class_Troop_property_attributes:
+
+.. rst-class:: classref-property
+
+`Array <https://docs.godotengine.org/en/stable/classes/class_array.html>`_\[:ref:`TroopAttribute<class_TroopAttribute>`\] **attributes** = <unknown>
+
+Stores the troop's attributes
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_defense:
+
+.. rst-class:: classref-property
+
+`int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_ **defense**
+
+Defense of the card
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_has_atkd:
+
+.. rst-class:: classref-property
+
+`bool <https://docs.godotengine.org/en/stable/classes/class_bool.html>`_ **has_atkd** = false
+
+Whether or not the troop has attacked
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_has_moved:
+
+.. rst-class:: classref-property
+
+`bool <https://docs.godotengine.org/en/stable/classes/class_bool.html>`_ **has_moved** = false
+
+Whether or not the troop has moved
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_id:
+
+.. rst-class:: classref-property
+
+`int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_ **id** = 0
+
+The troop id
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_move_graph:
+
+.. rst-class:: classref-property
+
+`Variant <https://docs.godotengine.org/en/stable/classes/class_variant.html>`_ **move_graph** = null
+
+Graph of tiles that the troop can move to.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_property_movement:
+
+.. rst-class:: classref-property
+
+`int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_ **movement**
+
+Movement of the card
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Constructor Descriptions
+------------------------
+
+.. _class_Troop_constructor__init:
+
+.. rst-class:: classref-constructor
+
+|void| **_init**\ (\ _game\: :ref:`Game<class_Game>`, card\: :ref:`Card<class_Card>` = null\ )
+
+Initiallizes a troop object from a card.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+Method Descriptions
+-------------------
+
+.. _class_Troop_private_method__calc_move_cost:
+
+.. rst-class:: classref-method
+
+`float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_ **_calc_move_cost**\ (\ strength\: `float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_, from\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, to\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, board\: :ref:`Board<class_Board>`\ )
+
+Internal function which determines the cost of moving from a tile to a tile.
+
+
+
+This is used in :ref:`build_graph<class_Troop_method_build_graph>` to determine where a unit can move to. Attributes which override the :ref:`TroopAttribute.calc_move_cost<class_TroopAttribute_method_calc_move_cost>` method can change the behavior of this method.
+
+
+
+\ **Parameters:**\ 
+
+\ ``strength``: An approximation to how many tiles this unit can move
+
+\ ``from``: Tile that the unit is moving from
+
+\ ``to``: Tile that the unit is moving to. Should be 1 tile away from ``from``\ 
+
+\ ``board``: The state of the board. See :ref:`Game.board<class_Game_property_board>`\ 
+
+\ **Returns: ``float``\ **\ 
+
+A number which represents approximately how much farther a unit can move. A return of 0 indicates that the unit can no longer move after going to ``to``. A return of -1 indicates that the unit cannot move to ``to``. Non-integer returns are allowed.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_private_method__get_surrounding:
+
+.. rst-class:: classref-method
+
+`Array <https://docs.godotengine.org/en/stable/classes/class_array.html>`_\[`Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_\] **_get_surrounding**\ (\ center\: `Vector2i <https://docs.godotengine.org/en/stable/classes/class_vector2i.html>`_, radius\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_\ )
+
+Helper function which returns all tiles within a certain radius of the center.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_private_method__init:
+
+.. rst-class:: classref-method
+
+|void| **_init**\ (\ _game\: :ref:`Game<class_Game>`, card\: :ref:`Card<class_Card>` = null\ )
+
+Initiallizes a troop object from a card.
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_method_attack_unit:
+
+.. rst-class:: classref-method
+
+|void| **attack_unit**\ (\ defender\: :ref:`Unit<class_Unit>`\ )
+
+Attacks another unit
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_method_being_attacked:
+
+.. rst-class:: classref-method
+
+`int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_ **being_attacked**\ (\ attacker\: :ref:`Unit<class_Unit>`, atk\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, attack_force\: `float <https://docs.godotengine.org/en/stable/classes/class_float.html>`_\ )
+
+Called when the unit is attacked
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Troop_method_build_graph:
+
+.. rst-class:: classref-method
+
+|void| **build_graph**\ (\ x\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, y\: `int <https://docs.godotengine.org/en/stable/classes/class_int.html>`_, board\: :ref:`Board<class_Board>`\ )
+
+Builds a graph of the tiles that the unit can move to.
+
+.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
+.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
+.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
+.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
+.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
+.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |void| replace:: :abbr:`void (No return value.)`
