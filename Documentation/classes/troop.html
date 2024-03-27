@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Troop &#8212; Cardtorium 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unit" href="unit.html" />
+    <link rel="prev" title="OptionsMenu" href="optionsmenu.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="troop">
+<span id="class-troop"></span><h1>Troop<a class="headerlink" href="#troop" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherits:</strong> <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a> <strong>&lt;</strong> <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a></p>
+<p>Class which represents a troop on the board.</p>
+<section class="classref-reftable-group" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference internal" href="troopattribute.html#class-troopattribute"><span class="std std-ref">TroopAttribute</span></a>]</p></td>
+<td><p><a class="reference internal" href="#class-troop-property-attributes"><span class="std std-ref">attributes</span></a></p></td>
+<td><p>&lt;unknown&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-defense"><span class="std std-ref">defense</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-has-atkd"><span class="std std-ref">has_atkd</span></a></p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-has-moved"><span class="std std-ref">has_moved</span></a></p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-id"><span class="std std-ref">id</span></a></p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-move-graph"><span class="std std-ref">move_graph</span></a></p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-property-movement"><span class="std std-ref">movement</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-troop-constructor-init"><span class="std std-ref">_init</span></a>(_game: <a class="reference internal" href="game.html#class-game"><span class="std std-ref">Game</span></a>, card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a> = null)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="classref-reftable-group" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-private-method-calc-move-cost"><span class="std std-ref">_calc_move_cost</span></a>(strength: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a>, from: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, to: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, board: <a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>]</p></td>
+<td><p><a class="reference internal" href="#class-troop-private-method-get-surrounding"><span class="std std-ref">_get_surrounding</span></a>(center: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, radius: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-troop-private-method-init"><span class="std std-ref">_init</span></a>(_game: <a class="reference internal" href="game.html#class-game"><span class="std std-ref">Game</span></a>, card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a> = null)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-troop-method-attack-unit"><span class="std std-ref">attack_unit</span></a>(defender: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a></p></td>
+<td><p><a class="reference internal" href="#class-troop-method-being-attacked"><span class="std std-ref">being_attacked</span></a>(attacker: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>, atk: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, attack_force: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#class-troop-method-build-graph"><span class="std std-ref">build_graph</span></a>(x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, board: <a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="property-descriptions">
+<h2>Property Descriptions<a class="headerlink" href="#property-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference internal" href="troopattribute.html#class-troopattribute"><span class="std std-ref">TroopAttribute</span></a>] <strong>attributes</strong> = &lt;unknown&gt;</p>
+<p>Stores the troop’s attributes</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> <strong>defense</strong></p>
+<p>Defense of the card</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> <strong>has_atkd</strong> = false</p>
+<p>Whether or not the troop has attacked</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_bool.html">bool</a> <strong>has_moved</strong> = false</p>
+<p>Whether or not the troop has moved</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> <strong>id</strong> = 0</p>
+<p>The troop id</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_variant.html">Variant</a> <strong>move_graph</strong> = null</p>
+<p>Graph of tiles that the troop can move to.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-property"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> <strong>movement</strong></p>
+<p>Movement of the card</p>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="constructor-descriptions">
+<h2>Constructor Descriptions<a class="headerlink" href="#constructor-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-constructor" id="class-troop-constructor-init"><abbr title="No return value.">void</abbr> <strong>_init</strong>(_game: <a class="reference internal" href="game.html#class-game"><span class="std std-ref">Game</span></a>, card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a> = null)</p>
+<p>Initiallizes a troop object from a card.</p>
+</section>
+<hr class="classref-section-separator docutils" />
+<section class="classref-descriptions-group" id="method-descriptions">
+<h2>Method Descriptions<a class="headerlink" href="#method-descriptions" title="Permalink to this headline">¶</a></h2>
+<p class="classref-method"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a> <strong>_calc_move_cost</strong>(strength: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a>, from: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, to: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, board: <a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a>)</p>
+<p>Internal function which determines the cost of moving from a tile to a tile.</p>
+<p>This is used in <a class="reference internal" href="#class-troop-method-build-graph"><span class="std std-ref">build_graph</span></a> to determine where a unit can move to. Attributes which override the <a class="reference internal" href="troopattribute.html#class-troopattribute-method-calc-move-cost"><span class="std std-ref">TroopAttribute.calc_move_cost</span></a> method can change the behavior of this method.</p>
+<p><strong>Parameters:</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">strength</span></code>: An approximation to how many tiles this unit can move</p>
+<p><code class="docutils literal notranslate"><span class="pre">from</span></code>: Tile that the unit is moving from</p>
+<p><code class="docutils literal notranslate"><span class="pre">to</span></code>: Tile that the unit is moving to. Should be 1 tile away from <code class="docutils literal notranslate"><span class="pre">from</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">board</span></code>: The state of the board. See <a class="reference internal" href="game.html#class-game-property-board"><span class="std std-ref">Game.board</span></a></p>
+<p><a href="#id26"><span class="problematic" id="id27">**</span></a>Returns: <code class="docutils literal notranslate"><span class="pre">float</span></code><a href="#id28"><span class="problematic" id="id29">**</span></a></p>
+<p>A number which represents approximately how much farther a unit can move. A return of 0 indicates that the unit can no longer move after going to <code class="docutils literal notranslate"><span class="pre">to</span></code>. A return of -1 indicates that the unit cannot move to <code class="docutils literal notranslate"><span class="pre">to</span></code>. Non-integer returns are allowed.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_array.html">Array</a>[<a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>] <strong>_get_surrounding</strong>(center: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_vector2i.html">Vector2i</a>, radius: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>)</p>
+<p>Helper function which returns all tiles within a certain radius of the center.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="class-troop-private-method-init"><abbr title="No return value.">void</abbr> <strong>_init</strong>(_game: <a class="reference internal" href="game.html#class-game"><span class="std std-ref">Game</span></a>, card: <a class="reference internal" href="card.html#class-card"><span class="std std-ref">Card</span></a> = null)</p>
+<p>Initiallizes a troop object from a card.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="class-troop-method-attack-unit"><abbr title="No return value.">void</abbr> <strong>attack_unit</strong>(defender: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>)</p>
+<p>Attacks another unit</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a> <strong>being_attacked</strong>(attacker: <a class="reference internal" href="unit.html#class-unit"><span class="std std-ref">Unit</span></a>, atk: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, attack_force: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_float.html">float</a>)</p>
+<p>Called when the unit is attacked</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method"><abbr title="No return value.">void</abbr> <strong>build_graph</strong>(x: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, y: <a class="reference external" href="https://docs.godotengine.org/en/stable/classes/class_int.html">int</a>, board: <a class="reference internal" href="board.html#class-board"><span class="std std-ref">Board</span></a>)</p>
+<p>Builds a graph of the tiles that the unit can move to.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="attribute.html">Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="card.html">Card</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mainmenu.html">MainMenu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">Player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troopattribute.html">TroopAttribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="board.html">Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optionsmenu.html">OptionsMenu</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit.html">Unit</a></li>
+</ul>
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Troop</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#constructors">Constructors</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+<li><a class="reference internal" href="#property-descriptions">Property Descriptions</a></li>
+<li><a class="reference internal" href="#constructor-descriptions">Constructor Descriptions</a></li>
+<li><a class="reference internal" href="#method-descriptions">Method Descriptions</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, None.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/classes/troop.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
